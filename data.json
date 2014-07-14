@@ -8,7 +8,7 @@
           "name": "How far does Java OSGi take us?",
           "children": [
             {
-              "name": "Far enough for prototyping purposes. Definite long-term drawbacks."
+              "name": "Far enough for a prototype."
             },
             {
               "name": "Can we mix in other languages?",
@@ -35,14 +35,112 @@
               "name": "Yes"
             }
           ]
+        },
+        {
+          "name": "Nginx or Apache?",
+          "children": [
+            {
+              "name": "Nginx"
+            }
+          ]
+        },
+        {
+          "name": "Can Apache Buildr make Java less painful?",
+          "children": [
+            {
+              "name": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "Can iPOJO make OSGi less painful?",
+          "children": [
+            {
+              "name": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "Can we support Jython and CPython from the same codebase?",
+          "children": [
+            {
+              "name": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "Can we interact with deployed code?",
+          "children": [
+            {
+              "name": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "Throw out all legacy code?",
+          "children": [
+            {
+              "name": "No...",
+              "children": [
+                {
+                  "name": "... isolate legacy code to be replaced later!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "How far does the GitHub issue tracker take us?",
+          "children": [
+            {
+              "name": "Far enough for early stage development"
+            }
+          ]
+        },
+        {
+          "name": "Can we use groovy with OSGi to make Java less painful?",
+          "children": [
+            {
+              "name": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "Can we use Scala with OSGi to make Java less painful?",
+          "children": [
+            {
+              "name": "No...",
+              "children": [
+                {
+                  "name": "... not saying it can't be done, just that we couldn't!"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "name": "Milestones"
+      "name": "Milestones",
+      "children": [
+        {
+          "name": "3 months"
+        },
+        {
+          "name": "6 months (First Release)"
+        },
+        {
+          "name": "1 year"
+        }
+      ]
     },
     {
-      "name": "Production"
+      "name": "Production",
+      "children": [
+        {
+          "name": "58 releases"
+        }
+      ]
     }
   ]
 }
