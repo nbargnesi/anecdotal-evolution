@@ -1,0 +1,48 @@
+{
+  "name": "Anecdotal Evolution",
+  "children": [
+    {
+      "name": "Prototype",
+      "children": [
+        {
+          "name": "How far does Java OSGi take us?",
+          "children": [
+            {
+              "name": "Far enough for prototyping purposes. Definite long-term drawbacks."
+            },
+            {
+              "name": "Can we mix in other languages?",
+              "children": [
+                {
+                  "name": "Yes"
+                }
+              ]
+            },
+            {
+              "name": "Can we do a RESTful API in Jython?",
+              "children": [
+                {
+                  "name": "Yes"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Can we adopt git everywhere?",
+          "children": [
+            {
+              "name": "Yes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Milestones"
+    },
+    {
+      "name": "Production"
+    }
+  ]
+}
