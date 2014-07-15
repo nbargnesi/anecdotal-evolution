@@ -1,18 +1,18 @@
 {
   "name": "Anecdotal Evolution",
-  "children": [
+  "_children": [
     {
       "name": "Prototype",
-      "children": [
+      "_children": [
         {
           "name": "How far does Java OSGi take us?",
-          "children": [
+          "_children": [
             {
               "name": "Far enough for a prototype."
             },
             {
               "name": "Can we develop a service-oriented system?",
-              "children": [
+              "_children": [
                 {
                   "name": "Yes. OSGi services were factored into bundles by functionality."
                 },
@@ -26,7 +26,7 @@
             },
             {
               "name": "Can we mix in other languages?",
-              "children": [
+              "_children": [
                 {
                   "name": "Yes. Use languages implemented on the JVM (e.g. Jython, JRuby, Scala, Groovy, etc.)."
                 }
@@ -34,7 +34,7 @@
             },
             {
               "name": "Can we improve development productivity using OSGi?",
-              "children": [
+              "_children": [
                 {
                   "name": "Yes. Individual OSGi bundles can be compiled and deployed into a running OSGi container."
                 },
@@ -45,7 +45,7 @@
             },
             {
               "name": "Can we do a RESTful API in Jython?",
-              "children": [
+              "_children": [
                 {
                   "name": "Yes. CherryPy was deployed as an OSGi bundle."
                 }
@@ -55,7 +55,7 @@
         },
         {
           "name": "Can we adopt git everywhere?",
-          "children": [
+          "_children": [
             {
               "name": "Yes"
             }
@@ -63,7 +63,7 @@
         },
         {
           "name": "Nginx or Apache?",
-          "children": [
+          "_children": [
             {
               "name": "Nginx"
             }
@@ -71,7 +71,7 @@
         },
         {
             "name": "Could Apache Buildr be a better build tool than Ant or Maven for a Java build tool?",
-          "children": [
+          "_children": [
             {
               "name": "Yes. Simple and declarative syntax with the full capabilities of Ruby. "
             },
@@ -82,7 +82,7 @@
         },
         {
           "name": "Can we support Jython and CPython from the same codebase?",
-          "children": [
+          "_children": [
             {
               "name": "Yes"
             }
@@ -90,7 +90,7 @@
         },
         {
           "name": "Can we interact with deployed code?",
-          "children": [
+          "_children": [
             {
               "name": "Yes"
             }
@@ -98,10 +98,10 @@
         },
         {
           "name": "Throw out all legacy code?",
-          "children": [
+          "_children": [
             {
               "name": "No...",
-              "children": [
+              "_children": [
                 {
                   "name": "... isolate legacy code to be replaced later!"
                 }
@@ -111,7 +111,7 @@
         },
         {
           "name": "How far does the GitHub issue tracker take us?",
-          "children": [
+          "_children": [
             {
               "name": "Far enough for early stage development"
             }
@@ -119,7 +119,7 @@
         },
         {
           "name": "Can we use Groovy with OSGi to make Java less painful?",
-          "children": [
+          "_children": [
             {
               "name": "Yes. Groovy's closures and DSL capabilities are a nice fit in a Java UI."
             }
@@ -127,10 +127,10 @@
         },
         {
           "name": "Can we use Scala with OSGi to make Java less painful?",
-          "children": [
+          "_children": [
             {
               "name": "Yes, but we...",
-              "children": [
+              "_children": [
                 {
                   "name": "do not have time to become experienced with Scala"
                 },
@@ -145,7 +145,7 @@
     },
     {
       "name": "Milestones",
-      "children": [
+      "_children": [
         {
           "name": "3 months"
         },
@@ -159,7 +159,7 @@
     },
     {
       "name": "Production",
-      "children": [
+      "_children": [
         {
           "name": "58 releases"
         }
