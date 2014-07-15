@@ -109,10 +109,13 @@
           "name": "Can we use Scala with OSGi to make Java less painful?",
           "children": [
             {
-              "name": "No...",
+              "name": "Yes, but we...",
               "children": [
                 {
-                  "name": "... not saying it can't be done, just that we couldn't!"
+                  "name": "do not have time to become experienced with Scala"
+                },
+                {
+                  "name": "have experience building algorithms in Java"
                 }
               ]
             }
