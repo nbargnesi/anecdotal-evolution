@@ -11,10 +11,26 @@
               "name": "Far enough for a prototype."
             },
             {
+              "name": "Can we develop a service-oriented system?",
+              "children": [
+                {
+                  "name": "Yes. OSGi services were factored into bundles by functionality."
+                }
+              ]
+            },
+            {
               "name": "Can we mix in other languages?",
               "children": [
                 {
-                  "name": "Yes"
+                  "name": "Yes. Use languages implemented on the JVM (e.g. Jython, JRuby, Scala, etc.)."
+                }
+              ]
+            },
+            {
+              "name": "Can we improve development productivity using OSGi?",
+              "children": [
+                {
+                  "name": "Yes. Individual OSGi bundles can be compiled and deployed into a running OSGi container."
                 }
               ]
             },
@@ -22,7 +38,7 @@
               "name": "Can we do a RESTful API in Jython?",
               "children": [
                 {
-                  "name": "Yes"
+                  "name": "Yes. CherryPy was deployed as an OSGi bundle."
                 }
               ]
             }
