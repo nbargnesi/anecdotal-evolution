@@ -15,6 +15,12 @@
               "children": [
                 {
                   "name": "Yes. OSGi services were factored into bundles by functionality."
+                },
+                {
+                  "name": "Bundles define interdependencies at the java package level which can be hard to manage over time."
+                },
+                {
+                  "name": "Service lifecycles needs to be tracked by implementing OSGi interfaces."
                 }
               ]
             },
@@ -22,7 +28,7 @@
               "name": "Can we mix in other languages?",
               "children": [
                 {
-                  "name": "Yes. Use languages implemented on the JVM (e.g. Jython, JRuby, Scala, etc.)."
+                  "name": "Yes. Use languages implemented on the JVM (e.g. Jython, JRuby, Scala, Groovy, etc.)."
                 }
               ]
             },
@@ -31,6 +37,9 @@
               "children": [
                 {
                   "name": "Yes. Individual OSGi bundles can be compiled and deployed into a running OSGi container."
+                },
+                {
+                  "name": "Improvement over compile and restart, but we can do better."
                 }
               ]
             },
@@ -61,18 +70,13 @@
           ]
         },
         {
-          "name": "Can Apache Buildr make Java less painful?",
+            "name": "Could Apache Buildr be a better build tool than Ant or Maven for a Java build tool?",
           "children": [
             {
-              "name": "Yes"
-            }
-          ]
-        },
-        {
-          "name": "Can iPOJO make OSGi less painful?",
-          "children": [
+              "name": "Yes. Simple and declarative syntax with the full capabilities of Ruby. "
+            },
             {
-              "name": "Yes"
+              "name": "No XML and less plugin headaches."
             }
           ]
         },
@@ -114,10 +118,10 @@
           ]
         },
         {
-          "name": "Can we use groovy with OSGi to make Java less painful?",
+          "name": "Can we use Groovy with OSGi to make Java less painful?",
           "children": [
             {
-              "name": "Yes"
+              "name": "Yes. Groovy's closures and DSL capabilities are a nice fit in a Java UI."
             }
           ]
         },
