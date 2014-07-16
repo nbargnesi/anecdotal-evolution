@@ -1,5 +1,5 @@
 {
-  "name": "Anecdotal Evolution",
+  "name": "Anecdotal Evolution: From Prototype to Production",
   "_children": [
     {
       "name": "Prototype",
@@ -14,13 +14,18 @@
               "name": "Can we develop a service-oriented system?",
               "_children": [
                 {
-                  "name": "Yes. OSGi services were factored into bundles by functionality."
-                },
-                {
-                  "name": "Bundles define interdependencies at the java package level which can be hard to manage over time."
-                },
-                {
-                  "name": "Service lifecycles needs to be tracked by implementing OSGi interfaces."
+                  "name": "Yes...",
+                  "_children": [
+                    {
+                      "name": "OSGi services were factored into bundles by functionality."
+                    },
+                    {
+                      "name": "Bundles define interdependencies at the java package level which can be hard to manage over time."
+                    },
+                    {
+                      "name": "Service lifecycles needs to be tracked by implementing OSGi interfaces."
+                    }
+                  ]
                 }
               ]
             },
@@ -28,18 +33,28 @@
               "name": "Can we mix in other languages?",
               "_children": [
                 {
-                  "name": "Yes. Use languages implemented on the JVM (e.g. Jython, JRuby, Scala, Groovy, etc.)."
+                  "name": "Yes...",
+                  "_children": [
+                    {
+                      "name": "Use languages implemented on the JVM (e.g. Jython, JRuby, Scala, Groovy, etc.)."
+                    }
+                  ]
                 }
               ]
             },
             {
-              "name": "Can we improve development productivity using OSGi?",
+              "name": "Can we improve developer productivity using OSGi?",
               "_children": [
                 {
-                  "name": "Yes. Individual OSGi bundles can be compiled and deployed into a running OSGi container."
-                },
-                {
-                  "name": "Improvement over compile and restart, but we can do better."
+                  "name": "Yes...",
+                  "_children": [
+                    {
+                      "name": "New OSGi bundles can be compiled and deployed into a running OSGi container."
+                    },
+                    {
+                      "name": "A slight improvement over compile and restart."
+                    }
+                  ]
                 }
               ]
             },
@@ -47,7 +62,12 @@
               "name": "Can we do a RESTful API in Jython?",
               "_children": [
                 {
-                  "name": "Yes. CherryPy was deployed as an OSGi bundle."
+                  "name": "Yes...",
+                  "_children": [
+                    {
+                      "name": "CherryPy was deployed as an OSGi bundle."
+                    }
+                  ]
                 }
               ]
             }
@@ -70,20 +90,25 @@
           ]
         },
         {
-            "name": "Could Apache Buildr be a better build tool than Ant or Maven for a Java build tool?",
+            "name": "Could Apache Buildr be a better build tool for Java?",
           "_children": [
             {
-              "name": "Yes. Simple and declarative syntax with the full capabilities of Ruby. "
-            },
-            {
-              "name": "No XML and less plugin headaches."
+              "name": "Yes...",
+              "_children": [
+                {
+                  "name": "Simple and declarative syntax, written in Ruby."
+                },
+                {
+                  "name": "No more XML."
+                }
+              ]
             }
           ]
         },
         {
           "name": "Can we support Jython and CPython from the same codebase?",
           "_children": [
-            {
+           {
               "name": "Yes"
             }
           ]
@@ -92,7 +117,12 @@
           "name": "Can we interact with deployed code?",
           "_children": [
             {
-              "name": "Yes"
+              "name": "Yes, for example...",
+              "_children": [
+                {
+                  "name": "... interacting with services at runtime."
+                }
+              ]
             }
           ]
         },
@@ -121,7 +151,12 @@
           "name": "Can we use Groovy with OSGi to make Java less painful?",
           "_children": [
             {
-              "name": "Yes. Groovy's closures and DSL capabilities are a nice fit in a Java UI."
+              "name": "Yes....",
+              "_children": [
+                {
+                  "name": "Groovy's closures and DSL capabilities are a nice fit in a Java UI."
+                }
+              ]
             }
           ]
         },
@@ -129,15 +164,7 @@
           "name": "Can we use Scala with OSGi to make Java less painful?",
           "_children": [
             {
-              "name": "Yes, but we...",
-              "_children": [
-                {
-                  "name": "do not have time to become experienced with Scala"
-                },
-                {
-                  "name": "have experience building algorithms in Java"
-                }
-              ]
+              "name": "Possibly, but we weren't able to in a short time frame."
             }
           ]
         }
@@ -147,13 +174,144 @@
       "name": "Milestones",
       "_children": [
         {
-          "name": "3 months"
+          "name": "3 months (Functional Prototype)",
+          "_children": [
+            {
+              "name": "Technology highlights: Java 7, MongoDB, Nginx, Jython/CPython 2.7, Apache Solr"
+            },
+            {
+              "name": "Started developing strong component-oriented characteristics."
+            },
+            {
+              "name": "Started reimplementing our core algorithms."
+            },
+            {
+              "name": "All legacy code was isolated."
+            }
+          ]
         },
         {
-          "name": "6 months (First Release)"
+          "name": "6 months (first release)",
+          "_children": [
+            {
+              "name": "Technology additions: Sphinx, PEP8, Pylint"
+            },
+            {
+              "name": "First standalone Python component introduced...",
+              "_children": [
+                {
+                  "name": "Configurable, Python 2.7 based component w/ a virtual environment...",
+                  "_children": [
+                    {
+                      "name": "Ported to Python 3 after 1 week as a Python 2 component."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Started being constrained by earlier decisions...",
+              "_children": [
+                {
+                  "name": "Apache Felix iPOJO was removed."
+                },
+                {
+                  "name": "Jython"
+                }
+              ]
+            },
+            {
+              "name": "Characteristics",
+              "_children": [
+                {
+                  "name": "Dynamic",
+                  "_children": [
+                    {
+                      "name": "Automation"
+                    },
+                    {
+                      "name": "Code reloading (Jython/Python/Java)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "1 year"
+          "name": "9 months (7 releases)",
+          "_children": [
+            {
+              "name": "Jython port to Python 3.3"
+            },
+            {
+              "name": "Release Engineering"
+            },
+            {
+              "name": "Configuration Management"
+            },
+            {
+              "name": "Expanded Test Infrastructure...",
+              "_children": [
+                {
+                  "name": "Unit tests"
+                },
+                {
+                  "name": "Doctests"
+                },
+                {
+                  "name": "Integration tests"
+                },
+                {
+                  "name": "Functional tests"
+                },
+                {
+                  "name": "Performance tests"
+                },
+                {
+                  "name": "Parallel testing and test isolation"
+                },
+                {
+                  "name": "Workflow tests"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1 year (14 releases)",
+          "_children": [
+            {
+              "name": "Close to feature parity with previous platform"
+            },
+            {
+              "name": "High level of flexibility & configurability"
+            },
+            {
+              "name": "Modular, component-oriented design"
+            },
+            {
+              "name": "Continuous integration, delivery, and deployment"
+            },
+            {
+              "name": "Seamlessly support developer and production deployments"
+            },
+            {
+              "name": "Rapidly changing and evolving"
+            },
+            {
+              "name": "Pain points...",
+              "_children": [
+                {
+                  "name": "Git difficult to use for some"
+                },
+                {
+                  "name": "Documentation can get out-of-date quickly"
+                }
+              ]
+            }
+
+          ]
         }
       ]
     },
@@ -161,7 +319,86 @@
       "name": "Production",
       "_children": [
         {
-          "name": "58 releases"
+          "name": "Today (60 releases)",
+          "_children": [
+            {
+              "name": "What's stayed? (the big stuff)",
+              "_children": [
+                {
+                  "name": "Polyglot (Java, Python, Groovy, Ruby, Shell, JavaScript)"
+                },
+                {
+                  "name": "Component-oriented design"
+                },
+                {
+                  "name": "MongoDB, Apache Solr, Nginx"
+                }
+              ]
+            },
+            {
+              "name": "What's come and gone? (to name a few)",
+              "_children": [
+                {
+                  "name": "iPOJO"
+                },
+                {
+                  "name": "Redis"
+                },
+                {
+                  "name": "ExtJS"
+                },
+                {
+                  "name": "Amazon Linux"
+                },
+                {
+                  "name": "Ansible"
+                }
+              ]
+            },
+            {
+              "name": "What's new?",
+              "_children": [
+                {
+                  "name": "ZeroMQ"
+                },
+                {
+                  "name": "Non-blocking I/O"
+                },
+                {
+                  "name": "Streaming APIs"
+                },
+                {
+                  "name": "Realtime crash notification and error reporting"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "From characteristics to principles...",
+      "_children": [
+        {
+          "name": "Build for flexibility; the decisions you make now can limit your future."
+        },
+        {
+          "name": "You don't need an IDE, you need an editor."
+        },
+        {
+          "name": "Document everything; so you can forget it."
+        },
+        {
+          "name": "Automate everything; so you won't have to do it."
+        },
+        {
+          "name": "Be suspcious of things that take too long. These quickly become roadblocks."
+        },
+        {
+          "name": "Make it configurable."
+        },
+        {
+          "name": "Just because you use 5% of a technology does not mean you should adopt it."
         }
       ]
     }
