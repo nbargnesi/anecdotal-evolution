@@ -1,169 +1,392 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Anecdotal Evolution</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/python/styles/screen.css">
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Anecdotal Evolution</h1>
+        <p>
+            From Prototype to Production
+        </p>
+	</header>
 
-.node rect {
-  cursor: pointer;
-  fill: #fff;
-  fill-opacity: 1;
-  stroke: #2e3436;
-  stroke-width: 1.1px;
-}
+	<section class="slide cover" id="Cover">
+        <div>
+            <h2>Anecdotal Evolution</h2>
+            <p>
+                From Prototype to Production
+            </p>
+            <p>
+                <a href="http://nbargnesi.github.io/anecdotal-evolution">
+                    http://nbargnesi.github.io/anecdotal-evolution
+                </a>
+            </p>
+            <img src="img/python.org.jpg" alt="">
+            <!--
+                To apply styles to the certain slides
+                set slide ID to get needed elements
+                -->
+            <style>
+                #Cover h2 {
+                    margin:30px 0 0;
+                    color:#FFF;
+                    text-align:center;
 
-.node text {
-  font: 10px sans-serif;
-  pointer-events: none;
-}
+                    font-size:70px;
+                    }
+                #Cover p {
+                    margin:10px 0 0;
+                    text-align:center;
+                    color:#FFF;
+                    font-style:italic;
+                    font-size:20px;
+                    }
+                    #Cover p a {
+                        color:#FFF;
+                    }
+            </style>
+        </div>
+	</section>
 
-path.link {
-  fill: none;
-  stroke: #babdb7;
-  stroke-width: 1.2px;
-}
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Who We Are</h2>
+            <p>
+            <ol>
+                <li>
+                <a href="http://selventa.com">Selventa</a> &mdash; based in Cambridge, MA
+                </li>
+                <li>
+                <a href="http://www.openbel.org">OpenBEL</a> &mdash; a Linux Foundation
+                Collaborative Project
+                </li>
+                <li>
+                Nick Bargnesi
+                <ul>
+                    <li>
+                    GitHub:
+                    <a href="https://github.com/nbargnesi">
+                        nbargnesi
+                    </a>
+                    </li>
+                    <li>
+                    Twitter:
+                    <a href="https://twitter.com/nbargnesi">
+                        @nbargnesi
+                    </a>
+                    </li>
+                </ul>
+                </li>
+                <li>
+                Anthony Bargnesi
+                <ul>
+                    <li>
+                    GitHub:
+                    <a href="https://github.com/abargnesi">
+                        abargnesi
+                    </a>
+                    </li>
+                    <li>
+                    Twitter:
+                    <a href="https://twitter.com/abargnesi">
+                        @abargnesi
+                    </a>
+                    </li>
+                </ul>
+                </li>
+            </ol>
+            </p>
+        </div>
+    </section>
 
-</style>
-<body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>
+                From Prototype to Production
+            </h2>
+            <p>
+            <center>
+            <img src="img/the-homer-to-model-s.png"/>
+            <br/>
+            (<a href="evolution-tree.html">subtitled in D3.js</a>)
+        </center>
+            </p>
+        </div>
+    </section>
 
-var margin = {top: 30, right: 20, bottom: 30, left: 20},
-    width = 960 - margin.left - margin.right,
-    barHeight = 20,
-    barWidth = width * .8;
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Where Are We Now?</h2>
+            <p>
+            <ol>
+                <li class="next">
+                Fast turnaround time for features &amp; fixes
+                </li>
+                <li class="next">
+                Continuous integration, delivery, and deployment processes
+                <ul>
+                    <li class="next">
+                    Deployments typically require <strong>no downtime</strong>.
+                    </li>
+                </ul>
+                </li>
+                <li class="next">
+                Powerful testing infrastructure
+                </li>
+                <li class="next">
+                Intrinsically scalable
+                </li>
+                <li class="next">
+                Proactive monitoring
+                </li>
+            </ol>
+            </p>
+        </div>
+    </section>
 
-var i = 0,
-    duration = 300,
-    root;
+    <section class="slide shout">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Highlights</h2>
+		</div>
+    </section>
 
-var tree = d3.layout.tree()
-    .nodeSize([0, 40]);
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Highlights</h2>
+            <strong>Fast Turnaround Time</strong>
+            <p>
+            <img src="img/crash.png"/>
+            </p>
+        </div>
+    </section>
 
-var diagonal = d3.svg.diagonal()
-    .projection(function(d) { return [d.y, d.x]; });
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Highlights</h2>
+            <strong>Proactive Monitoring</strong>
+            <p>
+            <img src="img/components.png"/>
+            <br/>
+            <img src="img/traceback.png"/>
+            <br/>
+            <img src="img/http-500.png"/>
+            </p>
+        </div>
+    </section>
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Highlights</h2>
+            <strong>The Go Shell</strong>
+            <p>
+            <center>
+            <img src="img/gosh.png"/>
+            </center>
+            </p>
+        </div>
+    </section>
 
-d3.json("data.json", function(error, data) {
-  data.x0 = 0;
-  data.y0 = 0;
-  update(root = data);
-});
+    <section class="slide shout">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>MVPs</h2>
+		</div>
+    </section>
 
-function update(source) {
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Fast Turnaround Time MVPs</h2>
+            <p>
+            <ol>
+                <li>
+                Python
+                </li>
+                <li>
+                Git
+                </li>
+                <li>
+                <a href="https://www.atlassian.com/software/bamboo">
+                    Atlassian Bamboo
+                </a>
+                </li>
+                <li>
+                <a href="http://www.fabfile.org/">
+                    Fabric
+                </a>
+                </li>
+                <li>
+                <a href="https://papertrailapp.com/">
+                    Papertrail
+                </a>
+                </li>
+            </ol>
+            </p>
+            <p>
+            Honorable mentions: OSGi, component-based designs, Apache Buildr,
+            and MongoDB.
+            </p>
+        </div>
+    </section>
 
-  // Compute the flattened node list. TODO use d3.layout.hierarchy.
-  var nodes = tree.nodes(root);
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Continuous (*) MVPs</h2>
+            <strong>(integration, delivery, and deployment)</strong>
+            <p>
+            <ol>
+                <li>
+                Git
+                </li>
+                <li>
+                <a href="https://www.atlassian.com/software/bamboo">
+                    Atlassian Bamboo
+                </a>
+                </li>
+            </ol>
+            </p>
+            <p>
+            Honorable mentions: <a href="http://supervisord.org/">
+            Supervisor</a>, component-based designs
+            </p>
+        </div>
+    </section>
 
-  var height = Math.max(500, nodes.length * barHeight + margin.top + margin.bottom);
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Testing MVPs</h2>
+            <p>
+            <ol>
+                <li>
+                Component-based Designs
+                </li>
+                <li>
+                Scalability
+                </li>
+                <li>
+                <a href="https://www.atlassian.com/software/bamboo">
+                    Atlassian Bamboo
+                </a>
+                </li>
+            </ol>
+            </p>
+            <p>
+            Honorable mentions: <a href="http://supervisord.org/">
+            Supervisor</a>, component-based designs
+            </p>
+        </div>
+    </section>
 
-  d3.select("svg").transition()
-      .duration(duration)
-      .attr("height", height);
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Scalability MVPs</h2>
+            <p>
+            <ol>
+                <li>
+                Component-based Designs
+                </li>
+                <li>
+                <a href="http://zeromq.org/">ZeroMQ</a>
+                </li>
+            </ol>
+            </p>
+            <p>
+            Honorable mentions: Nginx, Python
+            </p>
+        </div>
+    </section>
 
-  d3.select(self.frameElement).transition()
-      .duration(duration)
-      .style("height", height + "px");
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Proactive Monitoring MVPs</h2>
+            <p>
+            <ol>
+                <li>
+                Python
+                </li>
+                <li>
+                <a href="https://papertrailapp.com/">Papertrail</a>
+                </li>
+            </ol>
+            </p>
+        </div>
+    </section>
 
-  // Compute the "layout".
-  nodes.forEach(function(n, i) {
-    n.x = i * barHeight;
-  });
+    <section class="slide shout">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Principles</h2>
+		</div>
+    </section>
 
-  // Update the nodes…
-  var node = svg.selectAll("g.node")
-      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Characteristics &rarr; Principles</h2>
+            <ul>
+                <li class="next">Build for flexibility; the decisions
+                you make now can limit your future.
+                </li>
+                <li class="next">Choose your tools wisely.</li>
+                <li class="next">Document everything; so you can forget it.</li>
+                <li class="next">Automate everything; so you won't have to
+                do it.</li>
+                </li>
+                <li class="next">Be suspicious of things that take too long.
+                These quickly become roadblocks.</li>
+                <li class="next">Make it configurable, within reason.</li>
+                <li class="next">Be cautious adopting new technology. Code reuse
+                <em>isn't always good</em>.
+                </li>
+            </ul>
+        </div>
+    </section>
 
-  var nodeEnter = node.enter().append("g")
-      .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-      .style("opacity", 1e-6);
+    <section class="slide shout">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Inspiration</h2>
+		</div>
+    </section>
 
-  // Enter any new nodes at the parent's previous position.
-  nodeEnter.append("rect")
-      .attr("y", -barHeight / 2)
-      .attr("height", barHeight)
-      .attr("width", barWidth)
-      .style("fill", color)
-      .on("click", click);
+    <section class="slide">
+        <div style="background: #fff url(img/bg.png);">
+            <h2>Inspiration</h2>
+            <ul>
+                <li class="next">Alex Martelli &mdash;
+                <a href="https://www.youtube.com/watch?v=gHG9FRSlPxw">
+                    "Good enough" is good enough!
+                </a>
+                </li>
+                <li class="next">Bret Victor &mdash;
+                <a href="http://vimeo.com/36579366">
+                    Inventing on Principle
+                </a>
+                </li>
+                <li class="next">Jez Humble &amp; David Farley &mdash;
+                <a href="http://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912">
+                    Continuous Delivery
+                </a>
+                </li>
+                <li class="next">Dan Dennett &mdash;
+                <a href="http://www.amazon.com/Intuition-Pumps-Other-Tools-Thinking/dp/0393348784/ref=sr_1_1?ie=UTF8&qid=1406061804&sr=8-1&keywords=dan+dennett&dpPl=1">
+                    Intuition Pumps And Other Tools for Thinking
+                </a>
+                </li>
+                <li class="next">Many more...
+                <ul>
+                    <li><a href="http://www.lighttable.com/">Light Table</a></li>
+                    <li><a href="http://brackets.io/">Brackets</a></li>
+                </ul>
+            </ul>
+        </div>
+    </section>
 
-  nodeEnter.append("text")
-      .attr("dy", 3.5)
-      .attr("dx", 5.5)
-      .text(function(d) { return d.name; });
-
-  // Transition nodes to their new position.
-  nodeEnter.transition()
-      .duration(duration)
-      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
-      .style("opacity", 1);
-
-  node.transition()
-      .duration(duration)
-      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
-      .style("opacity", 1)
-    .select("rect")
-      .style("fill", color);
-
-  // Transition exiting nodes to the parent's new position.
-  node.exit().transition()
-      .duration(duration)
-      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
-      .style("opacity", 1e-6)
-      .remove();
-
-  // Update the links…
-  var link = svg.selectAll("path.link")
-      .data(tree.links(nodes), function(d) { return d.target.id; });
-
-  // Enter any new links at the parent's previous position.
-  link.enter().insert("path", "g")
-      .attr("class", "link")
-      .attr("d", function(d) {
-        var o = {x: source.x0, y: source.y0};
-        return diagonal({source: o, target: o});
-      })
-    .transition()
-      .duration(duration)
-      .attr("d", diagonal);
-
-  // Transition links to their new position.
-  link.transition()
-      .duration(duration)
-      .attr("d", diagonal);
-
-  // Transition exiting nodes to the parent's new position.
-  link.exit().transition()
-      .duration(duration)
-      .attr("d", function(d) {
-        var o = {x: source.x, y: source.y};
-        return diagonal({source: o, target: o});
-      })
-      .remove();
-
-  // Stash the old positions for transition.
-  nodes.forEach(function(d) {
-    d.x0 = d.x;
-    d.y0 = d.y;
-  });
-}
-
-// Toggle children on click.
-function click(d) {
-  if (d.children) {
-    d._children = d.children;
-    d.children = null;
-  } else {
-    d.children = d._children;
-    d._children = null;
-  }
-  update(d);
-}
-
-function color(d) {
-  return d._children ? "#92ECFF" : d.children ? "#fbe156" : "#eeeeec";
-}
-
-</script>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+</body>
+</html>

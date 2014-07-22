@@ -187,6 +187,9 @@
             },
             {
               "name": "All legacy code was isolated."
+            },
+            {
+              "name": "Supported developer and production environments."
             }
           ]
         },
@@ -373,32 +376,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "From characteristics to principles...",
-      "_children": [
-        {
-          "name": "Build for flexibility; the decisions you make now can limit your future."
-        },
-        {
-          "name": "You don't need an IDE, you need an editor."
-        },
-        {
-          "name": "Document everything; so you can forget it."
-        },
-        {
-          "name": "Automate everything; so you won't have to do it."
-        },
-        {
-          "name": "Be suspcious of things that take too long. These quickly become roadblocks."
-        },
-        {
-          "name": "Make it configurable."
-        },
-        {
-          "name": "Just because you use 5% of a technology does not mean you should adopt it."
         }
       ]
     }
